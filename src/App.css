@@ -1,0 +1,104 @@
+*{
+  margin:2px
+}
+body{
+  background-color: #dfd7d7;
+}
+tr:nth-last-of-type(odd){
+  background-color: honeydew;
+}
+tr:nth-last-of-type(even){
+  color:white
+}
+tr td:nth-of-type(2){
+  color:orange
+}
+tr td:nth-of-type(3){
+  color:red
+}
+tr td:nth-of-type(4){
+  color:green
+}
+tr:nth-of-type(1) td{
+  color:black
+}
+.App{
+  display:flex;
+  justify-content:space-evenly;
+}
+.first{
+  display:flex;
+  flex-direction:column;
+  flex:1
+}
+.first-1{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin:10px
+}
+.graphs{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width:750px){
+  .App{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .first{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .first-1{
+      flex-direction: column;
+      align-items: center;
+  }
+  .cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .graphs{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+  }
+  .second{
+    align-self: center;
+  }
+}
+@media screen and (min-width:751px) and (max-width:1430px){
+  .App{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .relation{
+    display:flex;
+    justify-content: center;
+  }
+  .cards{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .graphs{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .second{
+    align-self: center;
+  }
+}

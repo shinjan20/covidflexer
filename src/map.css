@@ -1,0 +1,9 @@
+.map{
+    height:500px;
+    border:5px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px #888888;
+}
+.map .leaflet-container{
+    height:100%;
+}
